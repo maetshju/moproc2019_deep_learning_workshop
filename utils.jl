@@ -67,7 +67,7 @@ function calculateCrossEntropy(wordName, model)
   labs = onehotbatch(labs, collect(1:61))
     
   labs = [labs[:,i] for i=1:size(labs, 2)]
-  
+  Flux.reset!(model)
   return Float64.(data.(crossentropy.(model.(mfccs), labs)))
 end
 
@@ -111,4 +111,27 @@ function makeTicks(boundaries, labels)
   end
   
   return (boundaries, ticks)
+end
+
+function entropy(wordName, model)
+  BSON.@load "$(joinpath(datadir, wordName)).bson" mfccs labs
+  mfccs = [mfccs[i,:] for i=1:size(mfccs, 1)]
+  
+  yhat = data.(model.(mfccs))
+  Flux.reset!(model)
+  return Float64.([-1 * sum(y .* log.(y)) for y in yhat])
+end
+
+function entropyPlot(wordName, model; legendLocation=:bottomright)
+  ent = entropy(wordName, model)
+  t = Float64.(collect(1:length(ent)))
+  b = findBoundaries(wordName)
+  
+  ent = predict(loess(t, ent), t)
+  
+  p = plot(t, ent, lab="Entropy", title=wordName, ylab="Entropy", xlab="Frame number", legend=legendLocation)
+  ticks = makeTicks(b, transcribe(wordName))
+  p = vline!(b, lab="Boundaries", xticks=ticks)
+  
+  return p
 end
