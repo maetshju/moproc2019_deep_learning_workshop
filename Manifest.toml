@@ -352,12 +352,6 @@ git-tree-sha1 = "a81f1ddec3a9afe801ab6777a61af573955d71d6"
 uuid = "49802e3a-d2f1-5c88-81d8-b72133a6f568"
 version = "0.3.2"
 
-[[ProgressMeter]]
-deps = ["Distributed", "Printf"]
-git-tree-sha1 = "fab12b19f198dd148ca467ac4e4f12ecd0241819"
-uuid = "92933f4c-e287-5a05-a399-4b506db050ca"
-version = "1.1.0"
-
 [[REPL]]
 deps = ["InteractiveUtils", "Markdown", "Sockets"]
 uuid = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
