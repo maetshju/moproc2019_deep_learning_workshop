@@ -10,21 +10,21 @@ These instructions will assume you have [already installed Julia](https://julial
 
 1. Install the appropriate packages in Julia:
 
- ```julia
+  ```julia
 ] add Flux BSON Loess Plots ProgressBars Random Statistics IJulia
 ```
 
- The "]" at the beginning means to press the "]" key to enter the package interface. Copying the whole line of code including the "]" in the Julia REPL console should automatically enter the package interface as well.
+  The "]" at the beginning means to press the "]" key to enter the package interface. Copying the whole line of code including the "]" in the Julia REPL console should automatically enter the package interface as well.
 
 2. Download this repository. If you use Git, this can be done using `git clone https://github.com/maetshju/moproc2019_deep_learning_workshop`. Otherwise, use the green "Clone or download" button at the upper right of the page.
 
 3. Start a notebook in Julia. At the console interface:
 
- ```julia
+  ```julia
 using IJulia
 notebook()
 ```
 
- Some information will be printed to the console, and a Jupyter notebook window will appear in your default web browser. If it asks you for a token, on a regular console (or CMD window on Windows), you will need to run `jupyter notebook list`, which will print out a URL with the token in it, which can be pasted into the webpage.
+  Some information will be printed to the console, and a Jupyter notebook window will appear in your default web browser. If it asks you for a token, on a regular console (or CMD window on Windows), you will need to run `jupyter notebook list`, which will print out a URL with the token in it, which can be pasted into the webpage.
 
 4. Use the Jupyter interface to find the corresponding "ipynb" files you downloaded as part of this repository. Clicking on them will open the notebooks, which you can then run from there.
