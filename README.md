@@ -18,7 +18,15 @@ These instructions will assume you have [already installed Julia](https://julial
 
 2. Download this repository. If you use Git, this can be done using `git clone https://github.com/maetshju/moproc2019_deep_learning_workshop`. Otherwise, use the green "Clone or download" button at the upper right of the page.
 
-3. Start a notebook in Julia. At the console interface:
+3. Download and unzip the subset of the MALD data set that we will be working with. If you have access to a Bash console, you can run the "postBuild" script to automatically download and extract the files.
+
+```bash
+sh postBuild
+```
+
+  If not, download them from [the University of Alberta institutional repository](https://doi.org/10.7939/r3-b7v0-dy61). Make sure that the folder containing the MALD folders is placed in the same directory as the rest of the files in this repository.
+
+4. Start a notebook in Julia. At the console interface:
 
   ```julia
 using IJulia
@@ -27,4 +35,4 @@ notebook()
 
   Some information will be printed to the console, and a Jupyter notebook window will appear in your default web browser. If it asks you for a token, on a regular console (or CMD window on Windows), you will need to run `jupyter notebook list`, which will print out a URL with the token in it, which can be pasted into the webpage.
 
-4. Use the Jupyter interface to find the corresponding "ipynb" files you downloaded as part of this repository. Clicking on them will open the notebooks, which you can then run from there.
+5. Use the Jupyter interface to find the corresponding "ipynb" files you downloaded as part of this repository. Clicking on them will open the notebooks, which you can then run from there.
