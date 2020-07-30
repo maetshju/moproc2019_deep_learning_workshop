@@ -1,6 +1,5 @@
 using Flux: onehotbatch, crossentropy
-using Flux.Tracker: data
-using ProgressBars
+using ProgressMeter
 using Random
 using BSON
 
@@ -13,7 +12,7 @@ phn2num["sil"] = 1
 function loadData()
   Xs, Ys = Vector(), Vector()
   println("Loading data")
-  for fname in ProgressBar(readdir(datadir))
+  @showprogress for fname in readdir(datadir)
     BSON.@load joinpath(datadir, fname) mfccs labs
     
     mfccs = [mfccs[i,:] for i=1:size(mfccs, 1)]
@@ -117,7 +116,7 @@ function entropy(wordName, model)
   BSON.@load "$(joinpath(datadir, wordName)).bson" mfccs labs
   mfccs = [mfccs[i,:] for i=1:size(mfccs, 1)]
   
-  yhat = data.(model.(mfccs))
+  yhat = model.(mfccs)
   Flux.reset!(model)
   return Float64.([-1 * sum(y .* log.(y)) for y in yhat])
 end
