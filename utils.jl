@@ -35,8 +35,8 @@ function makeBatches(d, batchSize)
   batches = []
   
   for i=1:floor(Int64, length(d) / batchSize)
-    startI = (i - 1) * 5 + 1
-    lastI = min(startI + 4, length(d))
+    startI = (i - 1) * batchSize + 1
+    lastI = min(startI + batchSize - 1, length(d))
     
     batch = d[startI:lastI]
     
