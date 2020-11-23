@@ -1,5 +1,5 @@
 echo "Downloading training data..."
-wget -q https://era.library.ualberta.ca/items/d0dd87c9-8091-467d-8c30-bd23a2a1fb55/download/cfeb8587-674d-4261-bbe0-d1c830fba2c5
-mv cfeb8587-674d-4261-bbe0-d1c830fba2c5 data.tar.gz
+wget -q https://era.library.ualberta.ca/items/d0dd87c9-8091-467d-8c30-bd23a2a1fb55/download/192e48bf-ffbd-4cb9-9e42-3cde0312994d
+mv 192e48bf-ffbd-4cb9-9e42-3cde0312994d data.tar.gz
 tar -xf data.tar.gz
 rm data.tar.gz
