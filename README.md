@@ -1,16 +1,12 @@
 Jupyter notebook for deep learning workshop at MoProc 2019. To open in binder, click on the binder badge next to the version you want. The "MoProc 2019" version will be the same as the notebook presented at the workshop, and the "latest" version will have any upates since the workshop.
 
-Latest version:
-* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/maetshju/moproc2019_deep_learning_workshop/master)
-* View intro notebook: [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/maetshju/moproc2019_deep_learning_workshop/blob/master/moproc2019_deep_learning_intro.ipynb)
-* View modeling notebook: [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/maetshju/moproc2019_deep_learning_workshop/blob/master/moproc2019_deep_learning_modeling.ipynb)
+**Latest version**  
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/maetshju/moproc2019_deep_learning_workshop/master) [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/maetshju/moproc2019_deep_learning_workshop/tree/master/)
 
 The latest version includes a small edit about global convergence, more information on using CuArrays for GPU acceleration, and a batching bugfix.
 
-MoProc 2019 version
-* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/maetshju/moproc2019_deep_learning_workshop/workshop_final)
-* View intro notebook: [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/maetshju/moproc2019_deep_learning_workshop/blob/workshop_final/moproc2019_deep_learning_intro.ipynb)
-* View modeling notebook: [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/maetshju/moproc2019_deep_learning_workshop/blob/workshop_final/moproc2019_deep_learning_modeling.ipynb)
+**MoProc 2019 version**  
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/maetshju/moproc2019_deep_learning_workshop/workshop_final) [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/maetshju/moproc2019_deep_learning_workshop/tree/workshop_final/)
 
 # Instructions for running the notebook locally
 
